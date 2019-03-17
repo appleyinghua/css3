@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        #box {
+            width: 10px;
+            height: 10px;
+            border-left: 100px solid red;
+            border-right: 100px solid green;
+            border-top: 50px solid yellow;
+            border-bottom: 50px solid gray;
+            margin-left: 20px;
+        }
+        @-webkit-keyframes active {
+            from { left: 0px;top:140px; }
+            to { left: 600px;top:140px; }
+        }
+        .content {
+            background-color:lightgreen;
+            position: absolute;
+            width: 500px;
+            height: 100px;
+            margin: 10px;
+            padding: 20px;
+            border-radius: 50px;
+            text-align: center;
+            background-image: -webkit-linear-gradient(left,lightgray,lightgreen 50%, yellow);
+            -webkit-animation: active 5s infinite linear;
+        }
+        h2 {
+            color: white;
+            text-shadow: 10px 10px 10px rgba(0,0,0,0.7);
+        }
+        .shadow {
+            color: white;
+            text-shadow: 0 0 1px #fff, 0 0 5px #fff, 0 0 10px yellow;
+        }
+        .shadow1 {
+            color: lightgray;
+            text-shadow: -1px -1px 0 #fff, 1px 1px 0 #333, 2px 2px 0 #444;
+        }
+        .radius {
+            width: 200px;
+            height: 200px;
+            margin-top: 200px;
+            text-align: center;
+            line-height: 200px;
+            background-color: lightgreen;
+            border-radius: 100px;
+            background-image: -webkit-radial-gradient(center center,orange, yellow 40%,white);
+            -webkit-transition:all 1s linear 1s;
+        }
+        .radius:hover {
+            color: deeppink;
+            background-color: lightgray;
+            background-image: -webkit-radial-gradient(center center,lightgreen, lightblue 40%,white);
+        }
+    </style>
+</head>
+<body>
+    <div id="box"></div>
+    <div class="content"> 
+        <h2>·天空之城·</h2>
+        <h3 class="shadow">阳光总在风雨后</h3>
+        <h4 class="shadow1">请相信有彩虹</h4>
+    </div>
+    <div class="radius">我是一个圆形</div>
+<script>
+
+</script>
+</body>
+</html>
